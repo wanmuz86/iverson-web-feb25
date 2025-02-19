@@ -1,0 +1,9 @@
+/* The mark inside #about us id */
+#about_us mark {
+    background-color: black;
+    color: yellow;
+}
+
+#our_price table td:first-child {
+    text-align: start;
+}

@@ -1,0 +1,261 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <!-- 1) Get the navbar from bootstrap documentation and paste it here -->
+    <!-- 2)change the colour using utility classes, eg: bg-success -->
+    <!-- 3) Define either your navbar colour is dark or light, 
+        so the font colour will be adjusted accordingly-->
+    <nav class="navbar navbar-expand-lg bg-success navbar-dark">
+      <!-- 
+        container-fluid : Full width container of a web page / penuhkan page/ fill in the page with navbar
+        container : Fixed width container (90% of the screen) of a a web page/ regardless of screen size
+      it will be a container of 90% 
+    For example, if we change to container, the navbar will be 90% of the screen
+    -->
+      -->
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">My Site</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <!-- If you want to push the navbar to the end, add ms-auto (margin-start auto) -->
+            <div class="navbar-nav ms-auto">
+              <a class="nav-link active" aria-current="page" href="#">Home</a>
+              <a class="nav-link" href="#">Features</a>
+              <a class="nav-link" href="#">Pricing</a>
+              <a class="nav-link" href="#">Contact</a>
+            </div>
+          </div>
+        </div>
+      </nav>
+      <!-- 4) Change the background colour of the header to bg-light/ light grey -->
+      <!-- 6) Center all the text in header , using text-center -->
+      <!-- 9) Add padding top-bottom (3), left right 5  using padding utility class
+                Add spacing/ margin bottom on the image mb-3 -->
+      <header class="bg-light text-center py-3 px-5">
+
+        <img class="mb-3 img-fluid" src="https://placehold.co/1000x600" 
+        alt="A big feature image"/>
+        <!-- 8) Add display class, to make the font slightly large
+        and thinner-->
+        <h1 class="display-2">Welcome to my Site</h1>
+        <p>Your go-to platform for amazing features</p>
+        <!-- 5) Change the color of the button to blue - btn-primary
+        And change the font of the button to white/light grey - text-light
+        We have to add class "btn" to reset the button
+        -->
+        <button class="btn btn-primary text-warning btn-lg">Learn More</button>
+      </header>
+      <section id="about_us" class="py-3">
+        <!-- 10) Add container to ensure that the content is 
+            within 90% of the screen -->
+        <div class="container">
+        <h2>About Us</h2>
+        <!-- 7) Discover some text utility class and element, eg: kbd, mark, del, u, code-->
+        <p>Lorem ipsum dolor sit amet consectetur <mark>adipisicing elit</mark>. Molestiae facilis voluptates tempore autem! Nisi explicabo enim ipsum autem iusto officiis accusantium iure aspernatur omnis! Quam tempora officia ad aut ipsum!</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. <del>Corrupti doloribus</del> ipsam provident reiciendis itaque. <u>Aliquam facilis</u>, in minima temporibus unde nam nostrum dolores minus, dolorem ipsum explicabo neque quo sint.</p>
+        <p>To restart a laptop use <kbd>ctrl</kbd>
+             + <kbd>alt</kbd> + <kbd>>del</kbd</p> 
+            <p>Let's have a <code>&lt;br/&gt;</code></p> 
+        </div>
+    </section>
+    <section id="products" class="py-3 bg-light">
+        <div class="container">
+            <h2 class="text-center">Our products</h2>
+            <!-- We start with a row -->
+            <div class="row">
+                <!-- For left and right we add class col -->
+                <!-- If we put col without speciying the number, 
+                    it will automatically divide evenly -->
+                    <!-- Normally we specify the number, ensuring that 
+                      the sum of a row, will become 12-->
+                <div class="col-md-6 col-sm-12">
+                    <img src="https://www.placehold.co/800x400" 
+                    alt="Product image" class="img-fluid">
+                </div>
+                <div class="col-md-6 col-sm-12">
+                  <h2>Iphone 16 Plus</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Id sequi aperiam quidem cum! Dolores repellat quos accusantium atque in eaque consequuntur, velit, optio modi, vitae et rerum eveniet dicta saepe!</p>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptates, ratione quod dolores ducimus delectus vero nostrum ipsa debitis architecto aperiam dicta labore impedit placeat dolorem perspiciatis accusamus tempore animi! Asperiores.</p>
+                </div>
+            </div>
+            <hr/>
+            <div class="row">
+              <div class="col-md-6 col-sm-12">
+                <h2>Ipone 16</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure accusantium quis numquam rem praesentium dicta doloribus ab, ipsam possimus, provident vitae? Distinctio velit totam quo magnam excepturi? Est, architecto voluptate!</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus iste enim laboriosam molestiae sapiente corrupti fugiat recusandae id obcaecati qui possimus, deleniti assumenda non eos earum eveniet ex ab magni!</p>
+              
+              </div>
+              <div class="col-md-6 col-sm-12">
+                <img src="https://www.placehold.co/800x400" 
+                alt="Product image" class="img-fluid">
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="features" class="py-3">
+      <div class="container">
+      <h2 class="mb-3 text-center" >Our Features</h2>
+      <div class="row row-gap-3">
+        <div class="col-lg-3 col-md-6 col-sm-12">
+          <div class="card bg-light text-center p-5">
+            <h5>Feature #1</h5>
+          </div>
+        </div> 
+        <div class="col-lg-3 col-md-6 col-sm-12">
+          <div class="card bg-light text-center p-5">
+            <h5>Feature #2</h5>
+          </div>
+        </div> 
+        <div class="col-lg-3 col-md-6 col-sm-12">
+          <div class="card bg-light text-center  p-5">
+            <h5>Feature #3</h5>
+          </div>
+        </div> 
+        <div class="col-lg-3 col-md-6 col-sm-12">
+          <div class="card bg-light text-center p-5">
+            <h5>Feature #4</h5>
+          </div>
+        </div> 
+      </div>
+      <div class="row mt-3 row-gap-3">
+        <div class="col-lg-3 col-md-6 col-sm-12">
+          <div class="card bg-light text-center p-5">
+            <h5>Feature #5</h5>
+          </div>
+        </div> 
+        <div class="col-lg-3 col-md-6 col-sm-12">
+          <div class="card bg-light text-center p-5">
+            <h5>Feature #6</h5>
+          </div>
+        </div> 
+        <div class="col-lg-3 col-md-6 col-sm-12">
+          <div class="card bg-light text-center  p-5">
+            <h5>Feature #7</h5>
+          </div>
+        </div> 
+        <div class="col-lg-3 col-md-6 col-sm-12">
+          <div class="card bg-light text-center p-5">
+            <h5>Feature #8</h5>
+          </div>
+        </div> 
+      </div>
+      </div>
+    </section>
+    <section id="our_price" class="bg-light py-3">
+      <div class="container">
+        <h2 class="text-center">Our pricing</h2>
+        <!-- To create a table we start with a table tag -->
+        <!-- To transform the table to a bootstrap table, add class table -->
+        <!-- In addition, you can further style the table, table-striped, table-hover,
+        table-bordered -->
+        <table class="table table-striped table-hover text-center table-bordered">
+        <!-- a table will have two sections
+        one is table head
+        one is table body   -->
+        <thead>
+          <!-- tr -> stands for table row, th -> table head / column-->
+          <tr >
+            <th class="bg-success text-light">Features</th>
+            <th class="bg-success text-light">Free</th>
+            <th class="bg-success text-light">Pro</th>
+            <th class="bg-success text-light">Business</th>
+          </tr>
+        </thead>
+        <tbody>
+                <!-- tr -> stands for table row, td -> table data / column-->
+                <tr>
+                  <td>Number of users</td>
+                  <td>1</td>
+                  <td>3</td>
+                  <td>5</td>
+                </tr>
+                <!-- storage: 1GB, 5GB , 100GB-->
+                <tr>
+                  <td>iCloud Storage</td>
+                  <td>1Gb</td>
+                  <td>5Gb</td>
+                  <td>100Gb</td>
+                </tr>  
+                <!--  Bandwidth: 10Mb, 50Mb, 100Mb-->
+                <tr>
+                  <td>Bandwidth</td>
+                  <td>10Mbps</td>
+                  <td>50bps</td>
+                  <td>100Mbps</td>
+                </tr>
+                <!-- Support:6 months, 1 year, 2 years-->  
+                <tr>
+                  <td>Support</td>
+                  <td>6 month</td>
+                  <td>1 year</td>
+                  <td>2 years</td>
+                </tr>
+                <!-- Shipping: 10USD, Free Shipping, Free Shipping -->
+                <tr>
+                  <td>Shipping</td>
+                  <td>10 USD</td>
+                  <td>Free Shipping</td>
+                  <td>Free Shipping</td>
+                </tr>
+                <!-- Price: 99USD, 199USD, 299USD-->
+                <tr>
+                  <td>Price</td>
+                  <td>99 USD</td>
+                  <td>199 USD</td>
+                  <td>299 USD</td>
+                </tr>
+        </tbody>
+        </table>
+      </div>
+    </section>
+    <section id="contact_us" class="py-3">
+      <div class="container">
+      <h2 class="text-center">Contact Us</h2>
+      <!-- To transform a HTML form into Bootstrap form (with styling)
+      add class form-label on the label and form-control on the input
+      -->
+      <form action="success.html" method="POST">
+        <div class="mb-3">
+          <label for="name" class="form-label">Name</label>
+          <input type="text" name="name" id="name" placeholder="Enter your name" class="form-control">
+        </div>
+        <div class="mb-3">
+          <label for="email" class="form-label">Email</label>
+          <input type="email" name="email" id="email" placeholder="Enter your email" class="form-control">
+        </div>
+        <div class="mb-3">
+          <label for="phone" class="form-label">Phone</label>
+          <input type="tel" name="phone" id="phone" placeholder="Enter your phone" class="form-control">
+        </div>
+        <!-- Self study exercise 
+        1) Add drop down menu -> Select (refer to documentation) Message type 
+        Enquiry, complaint, feedback, suggestion
+        -->
+        <div class="mb-3">
+          <label for="message" class="form-label">Message</label>
+          <textarea name="message" id="message" rows="3" class="form-control"></textarea>
+        </div>
+         <!-- Self study exercise 
+        2) Add a checkbox, I agree to be contacted by email (Checks)
+        -->
+        <button type="submit" class="btn btn-outline-primary">Submit</button>
+      </form>
+    </div>
+    </section>
+    <footer class="bg-dark text-light text-center p-5">
+      <p> &copy; 2025 My website Sdn Bhd</p>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+  </body>
+</html>

@@ -1,0 +1,83 @@
+body {
+    /* You can check the colour name in 147 colors */
+    background-color: bisque;
+    /* We specify the font and the backup font */
+    font-family: "Roboto", "Times New Roman",  serif;
+}
+/* Element */
+h1 {
+    /* Property/attribute : value */
+    /* RGB way defining colour */
+    /* We can also add opacity to the color rgba */
+    color:rgb(142,235,106);
+
+    /* Hexa way of defining color */
+    background-color: #ffff00;
+    font-size:40px;
+    font-family: "Sigmar", serif;
+    text-transform: uppercase;
+}
+
+h2 {
+    color:blue;
+    font-size:30px;
+    font-family: "Oswald", serif;
+    /* Add underlune on my h2 */
+    text-decoration: underline;
+}
+/* Common style for h1 and h2  (, ) */
+h1, h2 {
+    text-align: center; /* left, right, center */
+}
+
+p {
+    font-size:18px;
+    background-color: burlywood;
+    width: 500px;
+    height: 150px;
+    /* Check w3schools border for the other type */
+    /* solid, double, dotted, */
+    border: 5px green solid; 
+    /* Distance between the border and the text */
+    padding:10px; 
+    /* top left bottom right  all will be pushed 10px*/
+    /*10 px  - top right bottom left all will be 10px*/
+    /*10 px  20px - top  bottom (10px) left right 20px*/
+    /* 10px 20px 30px 40px - top right bottom left */
+    margin: 10px; 
+}
+
+a {
+    color:cadetblue;
+    text-decoration: none;
+}
+
+/* state of the link/button */
+a:hover {
+    text-decoration:underline;
+    font-style: italic;
+    font-size: 20px;
+}
+
+div {
+    background-color: #f0f0f0;
+    width:400px;
+    height:200px;
+    border: 2px double green;
+    padding: 10px;
+    /* How to center a box / div  - put margin left right to auto*/
+    margin: 10px auto;
+    border-radius: 10px;
+}
+/* The p in div */
+div p {
+width: 350px;
+height: 100px;
+border: none;
+background-color: #f0f0f0;
+
+}
+/* The h3 in div */
+div h3 {
+    text-align: center;
+}
