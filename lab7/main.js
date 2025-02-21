@@ -1,6 +1,6 @@
 // D3 command / D3 DOM Manipulation
 
-// Part 1 - Drawing SVG shapes
+// Part 1 - Drawing SVG shapes - Page 255
 // Drawing a rectangle
 d3.select("#shapes") //Get the SVG Element in my DOM
 .append("rect") //Append a rectangle to the SVG
@@ -18,7 +18,7 @@ d3.select("#shapes") //Get the SVG Element in my DOM
 .attr("r", 50) //Set the radius of the circle
 .attr("fill", "red") //Set the fill color of the circle 
 
-// Part 2: Simple Bar Chart
+// Part 2: Simple Bar Chart (257 - 259)
 // Data for the bar chart
 // in JS, ES6, you use let, to declare a variable
 // Use const to declare a constant -> the value will not be changed
@@ -51,7 +51,7 @@ d3.select("#bar-chart") //Get the SVG Element in my DOM
 .attr("height", (d) => heightScale(d)) //Set the height of the rectangle
 .attr("fill", "blue") //Set the fill color of the rectangle
 
-// Part 3: Simple Barchart with Axis , Title and Label
+// Part 3: Simple Barchart with Axis , Title and Label (261-263)
 const width = 500;
 const height = 300;
 const margin = {top:20, right:30, bottom:50, left:50}; // Margin for the chart against the SVG  
