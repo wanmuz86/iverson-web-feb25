@@ -91,7 +91,43 @@ d3.select("#bar-chart-axis") //Get the SVG Element in my DOM
 .append("g")
 .attr("transform", `translate(${margin.left}, 0)`) //Move the y-axis to the left of the SVG
 .call(yAxis); //Append the y-axis to the SVG
+// Page 263 - Drawing and animating the bars
+d3.select("#bar-chart-axis") //Get the SVG Element in my DOM
+.selectAll("rect") 
+.data(sampleData) 
+.enter()
+.append("rect")
+.attr("x", (d,i)=> xScale(i)) //Set the x position of the rectangle with the scalling
+.attr("width", xScale.bandwidth()) //Set the width of the rectangle
+.attr("fill", "blue") //Set the fill color of the rectangle
+.transition()
+.duration(1000)
+.attr("y", (d) =>yScale(d)) //Set the y position of the rectangle, 
+// to flip the bar chart, subtract the data value from the height of the SVG
+.attr("height", (d) =>  height - margin.bottom -  yScale(d)) //Set the height of the rectangle
 
-// TODOO : SHOW THE DATA IN THIS CHART
+// Part 2 of page 262:  (Adding Labels and Title)
 
-// Part 2 of page:  (Adding Labels and Tooltip)
+// Add Title
+d3.select("#bar-chart-axis").append("text")
+  .attr("x", width / 2)
+  .attr("y", margin.top)
+  .attr("text-anchor", "middle")
+  .style("font-size", "16px")
+  .text("Bar Chart Example");
+
+// Add X Axis Label
+d3.select("#bar-chart-axis").append("text")
+  .attr("x", width / 2)
+  .attr("y", height - 10)
+  .attr("text-anchor", "middle")
+  .text("Categories");
+
+// Add Y Axis Label
+d3.select("#bar-chart-axis").append("text")
+  .attr("x", -height / 2)
+  .attr("y", 15)
+  .attr("transform", "rotate(-90)")
+  .attr("text-anchor", "middle")
+  .text("Values");
+
