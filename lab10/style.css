@@ -1,0 +1,17 @@
+.bar {
+    fill: steelblue;
+}
+
+.bar:hover {
+    fill: orange;
+}
+
+.tooltip {
+    background-color: white;
+    border: 1px solid black;
+    padding: 5px;
+    /* THis will be used later  to show the tooltip on the chart */
+    position: absolute; 
+    /* hide the tooltip for a while */
+    display: none;
+}

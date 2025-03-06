@@ -38,13 +38,15 @@ renderer.setPixelRatio(window.devicePixelRatio);
 // The box has a width, height, and depth of 1 unit. [Size of the cube] [1,1,1]
 const geometry = new THREE.BoxGeometry( 5, 5, 5 ); 
 
+
+// Load the texture coming from the file muzz.jpg
+const myTexture = new THREE.TextureLoader().load('assets/muzz.jpg');
+
+
 // Material of the Surface of the cube
 //const material = new THREE.MeshBasicMaterial( {color: 0x00ff00} ); 
 // To see the difference wih light, use Standard Material
 const material = new THREE.MeshStandardMaterial( {color: 0xff00ff} );
-
-// Load the texture coming from the file muzz.jpg
-const myTexture = new THREE.TextureLoader().load('assets/muzz.jpg');
 material.map = myTexture; // Apply the texture to the cube
 
 const cube = new THREE.Mesh( geometry, material ); 
@@ -66,10 +68,14 @@ scene.add( torus )
 
 // radius, width , height
 const sphereGeometry = new THREE.SphereGeometry( 3, 32, 32 ); 
-const sphereMaterial = new THREE.MeshBasicMaterial( { color: 0xffff00 } ); 
+
 
 const moonTexture = new THREE.TextureLoader().load('assets/moon.jpg');
 sphereMaterial.map = moonTexture; // Apply the texture to the sphere
+
+
+const sphereMaterial = new THREE.MeshBasicMaterial( { color: 0xffff00 } ); 
+
 
 const sphere = new THREE.Mesh( sphereGeometry, sphereMaterial ); 
 scene.add( sphere );
