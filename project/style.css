@@ -1,0 +1,17 @@
+
+/** Shared style, can be used on multiple pages */
+
+.bg-maroon {
+    background-color: #0f113a;
+    color: aliceblue;
+}
+.bg-maroon:hover {
+    background-color: #2b2e6f;
+    color: aliceblue;
+}
+
+.card {
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2); /* Shadow effect */
+    border-radius: 8px; /* Rounded corners */
+    border: none; /* Remove default border */
+}

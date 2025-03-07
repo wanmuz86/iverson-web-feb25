@@ -10,6 +10,13 @@
     <div class="container">
     <h1>Hello, world!</h1>
     <div class="card p-5 bg-light">
+        <div class="alert alert-success" role="alert" hidden>
+            Employee successfully added.
+          </div>
+          <div class="alert alert-danger" role="alert" hidden>
+            An error occured, please try again.
+          </div>
+
         <h2>Add new employee</h2>
         <div class="mb-3">
             <label for="name" class="mb-1">Enter employee name</label>
@@ -41,10 +48,17 @@
             <label for="dateemployed" class="mb-1">Enter date employed</label>
             <input type="date" name="dateemployed" class="form-control" id="dateemployed">
         </div>
-        <button class="btn btn-primary" id="add_btn">Add Employee</button>
+        <button class="btn btn-primary" id="add_btn">
+            <span id="add_employee_text">
+            Add Employee 
+            </span>
+            <!-- hide the loading text and spinner before user press the button -->
+            <span id="loading_indicator" hidden><i class="fas fa-spinner fa-spin"></i>Loading ...</span>
+        </button>
     </div>
 </div>
 <script src="script.js"></script>
+ <script src="https://kit.fontawesome.com/932c19caf6.js" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
   </body>
 </html>
